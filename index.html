@@ -171,6 +171,22 @@
     width: 100%;
     height: auto;
   }
+  .cta-btn {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 14px 34px;
+    border-radius: 10px;
+    background: var(--text);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    box-shadow: var(--shadow);
+    transition: opacity 0.18s, transform 0.08s;
+  }
+  .cta-btn:hover { opacity: 0.85; }
+  .cta-btn:active { transform: scale(0.98); }
   /* ── STAY IN TOUCH ── */
   .stay-box {
     display: inline-flex;
@@ -749,30 +765,12 @@
   <div class="container">
     <h1>Quantitative data intelligence<br/>for <span class="em">biotech catalysts</span></h1>
     <p class="hero-sub">Patent filings, options flow, and real biological data, unified in one platform for biotech catalyst research.</p>
-    <div class="stay-box">
-      <span class="stay-label">Request access</span>
-      <div data-fs-success class="stay-confirm" style="display:none;">&#10003; You're on the list!</div>
-      <div data-fs-error class="stay-error" style="display:none;"></div>
-      <form id="stay-form">
-        <div class="stay-row">
-          <input class="stay-input" type="email" id="stayEmail" name="email"
-                 placeholder="your@email.com" autocomplete="email"
-                 data-fs-field required />
-          <button class="stay-btn" type="submit" data-fs-submit-btn>Submit</button>
-        </div>
-        <span data-fs-error="email" class="stay-field-error"></span>
-      </form>
-    </div>
+    <a class="cta-btn" href="https://calendly.com/gazizov-artm/30min" target="_blank" rel="noopener">Get access</a>
     <div class="hero-media">
       <img src="agentic_dd_clean.gif" alt="Agentic drug discovery walkthrough" />
     </div>
   </div>
 </section>
 
-<script>
-window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-formspree('initForm', { formElement: '#stay-form', formId: 'xljdrnke' });
-</script>
-<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
